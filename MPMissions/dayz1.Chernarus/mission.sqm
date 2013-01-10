@@ -1,0 +1,44 @@
+class Vehicles
+	{
+		items=2;
+		class Item0
+		{
+			position[]={4603.7852,339,9866.3418};
+			azimut=150;
+			id=43;
+			side="EMPTY";
+			vehicle="Land_repair_center";
+			skill=0.60000002;
+			description="Repair Building Helli";
+		};
+		class Item1
+		{
+			position[]={4614.5044,339,9869.043};
+			azimut=150;
+			id=44;
+			side="EMPTY";
+			vehicle="HeliHCivil";
+			skill=0.60000002;
+			description="Helli Reload Pad";
+		};
+	};
+
+
+	class Sensors
+	{
+		items=1;
+		class Item0
+		{
+			position[]={4615.0078,339,9869.3428};
+			a=6;
+			b=6;
+			activationBy="ANY";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			name="HeliReload";
+			expCond="this and ((getpos (thislist select 0)) select 2 < 1)";
+			expActiv="_xhandle= [(thislist select 0)] execVM ""scriptsMZ\MZ_helo.sqf"";";
+			class Effects
+		};
+	};
