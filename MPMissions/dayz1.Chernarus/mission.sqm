@@ -39,5 +39,6 @@ class Vehicles
 			name="HeliReload";
 			expCond="this and ((getpos (thislist select 0)) select 2 < 1)";
 			expActiv="_xhandle= [(thislist select 0)] execVM ""scriptsMZ\MZ_helo.sqf"";";
+			class Effects { };
 		};
 	};
